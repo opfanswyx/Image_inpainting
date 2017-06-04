@@ -7,15 +7,15 @@ while 0~=aa
     if aa==1
          x1=input('输入x1:');y1=input('输入y1:');
          x2=input('输入x2:');y2=input('输入y2:');
-         for t1=x1:1:x1+1
-             for t2=x2:1:x2+1
+         for t1=x1:1:x1+3
+             for t2=x2:1:x2+3
             color=one_level_bezier(color,t1,y1,t2,y2);
              end;
          end;
-         t1=t1-1;
-         t2=t2-1;
-         for t1=x1:-1:x1-1
-             for t2=x2:-1:x2-1
+         t1=t1-3;
+         t2=t2-3;
+         for t1=x1:-1:x1-3
+             for t2=x2:-1:x2-3
              color=one_level_bezier(color,t1,y1,t2,y2);
              end;
          end;
